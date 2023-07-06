@@ -4114,7 +4114,7 @@ gb_internal void convert_to_typed(CheckerContext *c, Operand *operand, Type *tar
 				operand->mode = Addressing_Invalid;
 				convert_untyped_error(c, operand, target_type);
 				if (count > 0) {
-					error_line("'%s' is a union which only excepts the following types:\n", type_str);
+					error_line("'%s' is a union which only expects the following types:\n", type_str);
 					error_line("\t");
 					for (i32 i = 0; i < count; i++) {
 						Type *v = t->Union.variants[i];
